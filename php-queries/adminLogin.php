@@ -16,12 +16,11 @@
     <br>
     <div align="center">
 
-
         <div align="center">
 
             <h1>
-                <p style="font-family:georgia,garamond,serif;font-size:35px;font-style:italic;">WELCOME TO NATIONAL ART
-                    GALLERY</p>
+                <p style="font-family:georgia,garamond,serif;font-size:35px;font-style:italic;">WELCOME TO NATIONAL
+                    ARTGALLERY</p>
             </h1>
             <h6>
                 <p style="font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Login As Administrator
@@ -30,9 +29,7 @@
 
         </div>
 
-
     </div>
-
 
 
     <div class="container" align="center">
@@ -52,65 +49,60 @@
 
         </div>
 
-
     </div>
 
 </body>
-
 </html>
 
 <?php
 
 $conn = mysqli_connect('localhost', 'root', '', 'product');
 
-if (isset($_POST["login_admin"])) {
-    # code...
+if (isset($_POST["login_admin"])) 
+{
 
     $username = $_POST["username"];
     $password = $_POST["password"];
     $query = "SELECT * FROM table_admin WHERE admin_Name='$username' AND admin_Password='$password'";
     $results = mysqli_query($conn, $query);
-    if (mysqli_num_rows($results) == 1) {
+    if (mysqli_num_rows($results) == 1) 
+    {
+    ?>
+        <!DOCTYPE html>
+        <html>
+        <body>
 
-        ?>
+            <div align="center">
+                <p>
+                    <h5>You Are Now Logged In As Administrator</h5>
+                    <h4>Click To Start <a href="product.php">Lets Begin</a></h4>
+                </p>
+            </div>
 
-<!DOCTYPE html>
-<html>
+        </body>
+        </html>
 
-<body>
-    <div align="center">
-        <p>
-            <h5>You Are Now Logged In As Administrator</h5>
-            <h4>Click To Start <a href="product.php">Lets Begin</a></h4>
-        </p>
-    </div>
+    <?php
+    } 
+    else 
+    {
+    ?>
 
-</body>
+        <!DOCTYPE html>
+        <html>
+        <body>
 
-</html>
+            <div align="center">
+                <p>
+                    <h4>Wrong Password/Username Combination</h4>
+                </p>
+            </div>
 
-<?php
+        </body>
+        </html>
 
-    } else {
-        ?>
-
-<!DOCTYPE html>
-<html>
-
-<body>
-    <div align="center">
-        <p>
-            <h4>Wrong Password/Username Combination</h4>
-        </p>
-    </div>
-
-</body>
-
-</html>
-
-<?php
-
+    <?php 
     }
-}
 
+}
 ?>
