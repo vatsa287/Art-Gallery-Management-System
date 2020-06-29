@@ -11,10 +11,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Client Register</title>
+    
 </head>
 
 <body>
+
     <br>
+    
     <div align="center">
 
         <div align="center">
@@ -87,6 +90,5 @@
 
       <?php
       }
-  )
- ?>
-  
+  }
+?>
