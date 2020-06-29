@@ -13,9 +13,10 @@
  </head>
 
  <body>
-     <br>
-     <div align="center">
 
+     <br>
+
+     <div align="center">
 
          <div align="center">
 
@@ -29,10 +30,7 @@
 
          </div>
 
-
      </div>
-
-
 
      <div class="container" align="center">
 
@@ -55,7 +53,6 @@
              </div>
 
          </div>
-
 
      </div>
 
