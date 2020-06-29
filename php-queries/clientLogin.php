@@ -84,7 +84,7 @@ $results = mysqli_query($conn, $query);
 		<div align="center">
 			<p>
 				<h5>You Are Now Logged In</h5>
-				<h4>Click To Start <a href="clientProduct2.php">Lets Begin</a></h4>
+				<h4>Click To Start <a href="clientProduct.php">Lets Begin</a></h4>
 			</p>
 		</div>
 

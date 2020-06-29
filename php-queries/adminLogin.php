@@ -75,7 +75,7 @@ if (isset($_POST["login_admin"]))
             <div align="center">
                 <p>
                     <h5>You Are Now Logged In As Administrator</h5>
-                    <h4>Click To Start <a href="product.php">Lets Begin</a></h4>
+                    <h4>Click To Start <a href="adminProduct.php">Lets Begin</a></h4>
                 </p>
             </div>
 

@@ -78,7 +78,7 @@
             <div align="center">
                 <p>
                     <h5>You Are Now Registered</h5>
-                    <h4>Click To Start <a href="clientProduct2.php">Lets Begin</a></h4>
+                    <h4>Click To Start <a href="clientProduct.php">Lets Begin</a></h4>
                 </p>
             </div>
 
